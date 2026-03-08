@@ -1,0 +1,73 @@
+# FairPari Guide UZ — разрешаем поисковики и SEO-инструменты, запрещаем AI-краулеры
+
+User-agent: *
+Allow: /
+
+# Запрет AI-краулеров (обучение моделей)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Cohere-AI
+Disallow: /
+
+# Разрешаем поисковые системы
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# SEO-инструменты
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: SerpStatBot
+Allow: /
+
+User-agent: SEranking
+Allow: /
+
+# Sitemap (замените YOUR_DOMAIN на ваш домен, напр. https://yoursite.com)
+Sitemap: YOUR_DOMAIN/sitemap.xml
