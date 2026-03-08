@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FairPari Uzbekistan — загрузка…</title>
+  <meta name="robots" content="noindex,follow">
+  <script>
+    (function() {
+      var base = (window.location.pathname || '/').replace(/\/?index\.html$/, '').replace(/\/?$/, '') || '';
+      if (base) base += '/';
+      var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      var preferUz = false;
+      if (lang.startsWith('uz')) {
+        preferUz = true;
+      } else if (navigator.languages && navigator.languages.length) {
+        for (var i = 0; i < navigator.languages.length; i++) {
+          var l = navigator.languages[i].toLowerCase();
+          if (l.startsWith('uz')) {
+            preferUz = true;
+            break;
+          }
+          if (l.startsWith('ru')) break;
+        }
+      }
+      var path = base + (preferUz ? 'uz-uz' : 'ru-uz') + '/';
+      window.location.replace(path);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0;url=ru-uz/">
+  <link rel="alternate" hreflang="ru" href="ru-uz/">
+  <link rel="alternate" hreflang="uz" href="uz-uz/">
+  <link rel="alternate" hreflang="x-default" href="ru-uz/">
+</head>
+<body>
+  <p>Перенаправление… <a href="ru-uz/">Русский</a> · <a href="uz-uz/">Oʻzbekcha</a></p>
+</body>
+</html>
