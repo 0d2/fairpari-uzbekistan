@@ -23,8 +23,8 @@
           if (l.startsWith('ru')) break;
         }
       }
-      var path = base + (preferUz ? 'uz-uz' : 'ru-uz') + '/';
-      window.location.replace(path);
+      var path = (base || '/') + (preferUz ? 'uz-uz' : 'ru-uz') + '/';
+      window.location.replace(window.location.origin + path);
     })();
   </script>
   <meta http-equiv="refresh" content="0;url=ru-uz/">
